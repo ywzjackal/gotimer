@@ -59,7 +59,7 @@
  #if USE_SCHED_FIFO
 	rt = sched_setscheduler(0, SCHED_FIFO, &p_timer->schedParam);
 	if(rt){
-		printf("Fail to init `sched_setscheduler`");
+		printf("Fail to `sched_setscheduler` errno:%d, msg:%s\n",errno,strerror(errno));
 	}
  #endif
 	//
