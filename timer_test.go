@@ -50,5 +50,5 @@ func Test_Timer(t *testing.T) {
 	timer.Pause()
 	time.Sleep(50 * time.Millisecond)
 	timer.Run(begin, duration, 0)
-	time.Sleep(50000000 * time.Millisecond)
+	time.Sleep(500 * time.Millisecond)
 }
